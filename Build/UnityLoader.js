@@ -781,7 +781,7 @@ var UnityLoader = UnityLoader || {
     if (!UnityLoader.SystemInfo.hasWebGL) {
       unityInstance.popup("Your browser does not support WebGL",
         [{text: "OK", callback: onerror}]);
-    } else if (UnityLoader.SystemInfo.mobile) {
+    } else if (false) {
       unityInstance.popup("Please note that Unity WebGL is not currently supported on mobiles. Press OK if you wish to continue anyway.",
         [{text: "OK", callback: onsuccess}]);
     } else if (["Edge", "Firefox", "Chrome", "Safari"].indexOf(UnityLoader.SystemInfo.browser) == -1) {
